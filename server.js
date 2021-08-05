@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 8080;
 const app = express();
 
 // Serve only the static files form the dist directory
-app.use(express.static(__dirname + '/dist/basma-cv'));
+app.use(express.static(__dirname + '/docs/basma-cv'));
 
 app.get('/*', function(req, res) {
 
