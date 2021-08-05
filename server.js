@@ -6,11 +6,11 @@ const PORT = process.env.PORT || 8080;
 const app = express();
 
 // Serve only the static files form the dist directory
-app.use(express.static(__dirname + '/docs/basma-cv'));
+app.use(express.static(__dirname + '/dist/basma-cv'));
 
 app.get('/*', function(req, res) {
 
-    res.sendFile(path.join(__dirname + '/docs/basma-cv/index.html'));
+    res.sendFile(path.join(__dirname + '/dist/basma-cv/index.html'));
 });
 
 // Start the app by listening on the default Heroku port
