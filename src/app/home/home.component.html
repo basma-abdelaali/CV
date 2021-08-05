@@ -20,7 +20,7 @@
         </button>
 
         <a href="#hero" class="site-logo"
-          ><img style="width: 22vw;" src="assets/img/logo-basma.png" alt="logo"
+          ><img style="width: 22vw" src="assets/img/logo-basma.png" alt="logo"
         /></a>
       </div>
       <!-- /.navbar-header -->
@@ -236,7 +236,7 @@
           <div class="portfolio-item">
             <img src="assets/img/hciaR&S.png" class="img-res" alt="" />
             <div class="portfolio-item-info">
-              <h4>HUAWEI HCIA R&S </h4>
+              <h4>HUAWEI HCIA R&S</h4>
             </div>
             <!-- /.portfolio-item-info -->
           </div>
@@ -257,7 +257,7 @@
           <div class="portfolio-item">
             <img src="assets/img/atast.jpg" class="img-res" alt="" />
             <div class="portfolio-item-info">
-              <h4> Nuit de L'info 2019</h4>
+              <h4>Nuit de L'info 2019</h4>
             </div>
             <!-- /.portfolio-item-info -->
           </div>
@@ -334,44 +334,65 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h3>What i do</h3>
+          <h3>Stages Professionnels</h3>
           <img src="assets/img/lines.svg" class="img-lines" alt="lines" />
         </div>
-        <div class="col-sm-4">
+        <div class="col-md-4">
           <div class="service">
-            <img src="assets/img/front-end.svg" alt="Front End Developer" />
-            <h4>Front-end</h4>
+            <h4>01/08/2021 - Actuellement</h4>
             <p>
-              As a javascript developer, I have experience in HTML5 and CSS3
-              techniques working with jQuery or more advanced javascript MVC
-              frameworks such as angular
+              Stage en tant que développeur Web chez
+              <strong>Satoripop</strong>.
+            </p>
+            <p>Développement des applications web.</p>
+          </div>
+          <!-- /.service -->
+        </div>
+        <div class="col-md-4">
+          <div class="service">
+            <h4>01/06/2017 - 30/06/2017</h4>
+            <p>
+              Stage en tant que technicienne en réseaux et télécommunication à
+              <strong> Tunisie Télécom </strong>.
             </p>
           </div>
           <!-- /.service -->
         </div>
-        <div class="col-sm-4">
+        <div class="col-md-4 ">
           <div class="service">
-            <img src="assets/img/back-end.svg" alt="Back End Developer" />
-            <h4>Back-end</h4>
+            <h4>01/07/2018 - 31/07/2018</h4>
             <p>
-              Utilising php frameworks such as Zend or creating bespoke code,
-              I've written services supporting thousands of users, including
-              REST APIs, e-learning applications and more.
+              Stage en tant que technicienne polyvalente à
+              <strong>l’aéroport Habib BOURGUIBA Monastir</strong> (Service
+              Informatique).
             </p>
           </div>
           <!-- /.service -->
         </div>
-        <div class="col-sm-4">
+        <div class="col-md-4 ">
           <div class="service">
-            <img src="assets/img/consultancy.svg" alt="Coding" />
-            <h4>Consultancy</h4>
+            <h4>01/08/2020 - 01/10/2020</h4>
             <p>
-              As well as providing development services, I can also help you
-              decide strategic roadmaps via consultancy services.
+              Stage en tant que développeur Web chez <strong>Satoripop</strong>.
             </p>
+            <p>Développement des applications web.</p>
           </div>
           <!-- /.service -->
         </div>
+          <div class="col-md-4 ">
+            <div class="service">
+              <h4>01/03/2021 - 01/06/2021</h4>
+              <p>
+                Stage en tant que développeur Web chez
+                <strong>
+                  L’association de Recherche Scientifique et Innovation en
+                  Informatique</strong
+                >.
+              </p>
+              <p>Développement des applications web.</p>
+            </div>
+            <!-- /.service -->
+          </div>   
       </div>
     </div>
   </section>
@@ -542,12 +563,12 @@
     <div class="container">
       <h3>Contact</h3>
       <img src="assets/img/lines.svg" class="img-lines" alt="lines" />
-      <form [formGroup]="contactForm" >
+      <form [formGroup]="contactForm">
         <div class="row">
           <div class="col-sm-6">
             <input
               type="text"
-              formControlName="name" 
+              formControlName="name"
               class="form-control mt-x-0"
               placeholder="Name"
               required
@@ -556,7 +577,7 @@
           <div class="col-sm-6">
             <input
               type="email"
-              formControlName="email" 
+              formControlName="email"
               class="form-control"
               placeholder="Email"
               required
@@ -564,7 +585,7 @@
           </div>
           <div class="col-sm-12">
             <textarea
-            formControlName="message" 
+              formControlName="message"
               id="mesaage"
               class="form-control"
               placeholder="Message"
