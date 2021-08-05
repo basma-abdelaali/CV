@@ -20,7 +20,7 @@
         </button>
 
         <a href="#hero" class="site-logo"
-          ><img src="assets/img/logo.png" alt="logo"
+          ><img style="width: 22vw;" src="assets/img/logo-basma.png" alt="logo"
         /></a>
       </div>
       <!-- /.navbar-header -->
@@ -31,6 +31,7 @@
           <li class="page-scroll"><a href="#about">About</a></li>
           <li class="page-scroll"><a href="#service">Service</a></li>
           <li class="page-scroll"><a href="#portfolio">Portfolio</a></li>
+          <li class="page-scroll"><a href="#challange">challange</a></li>
           <li class="page-scroll"><a href="#contact">Contact</a></li>
         </ul>
         <!-- /.navbar-nav -->
@@ -72,8 +73,8 @@
           <img src="assets/img/lines.svg" class="img-lines" alt="lines" />
           <p>
             Basma ABDELAALI est une étudiante rigoureuse, motivée qui fait
-            preuve de beaucoup d’enthousiasme pour les nouvelles technologies.
-            A su faire preuve d’assiduité, de sérieux, d’initiative et de
+            preuve de beaucoup d’enthousiasme pour les nouvelles technologies. A
+            su faire preuve d’assiduité, de sérieux, d’initiative et de
             créativité.
           </p>
           <p>
@@ -83,13 +84,7 @@
             et se charge d’effectuer les tâches qui lui sont attribuées dans les
             délais prescrits.
           </p>
-          <a
-            href="http://www.grad.illinois.edu/sites/default/files/pdfs/cvsamples.pdf"
-            class="btn btn-fill"
-            target="_blank"
-            download
-            >Download my cv</a
-          >
+          <div (click)="downloadPdf()" class="btn btn-fill">Download my cv</div>
         </div>
       </div>
     </div>
@@ -230,6 +225,108 @@
   </section>
   <!-- /.secton-skills -->
 
+  <section id="certificat" class="site-section section-portfolio">
+    <div class="container">
+      <div class="text-center">
+        <h3>Mes Certifications</h3>
+        <img src="assets/img/lines.svg" class="img-lines" alt="lines" />
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-xs-6">
+          <div class="portfolio-item">
+            <img src="assets/img/hciaR&S.png" class="img-res" alt="" />
+            <div class="portfolio-item-info">
+              <h4>HUAWEI HCIA R&S </h4>
+            </div>
+            <!-- /.portfolio-item-info -->
+          </div>
+          <!-- /.portfolio-item -->
+        </div>
+
+        <div class="col-md-4 col-xs-6">
+          <div class="portfolio-item">
+            <img src="assets/img/scrum.png" class="img-res" alt="" />
+            <div class="portfolio-item-info">
+              <h4>Scrum Foundation</h4>
+            </div>
+            <!-- /.portfolio-item-info -->
+          </div>
+          <!-- /.portfolio-item -->
+        </div>
+        <div class="col-md-4 col-xs-6">
+          <div class="portfolio-item">
+            <img src="assets/img/atast.jpg" class="img-res" alt="" />
+            <div class="portfolio-item-info">
+              <h4> Nuit de L'info 2019</h4>
+            </div>
+            <!-- /.portfolio-item-info -->
+          </div>
+          <!-- /.portfolio-item -->
+        </div>
+        <div class="col-md-4 col-xs-6" style="margin-top: 20px">
+          <div class="portfolio-item">
+            <img src="assets/img/cert1.jpg" class="img-res" alt="" />
+            <div class="portfolio-item-info">
+              <h4>CCNA Routing & Switching</h4>
+            </div>
+            <!-- /.portfolio-item-info -->
+          </div>
+          <!-- /.portfolio-item -->
+        </div>
+        <div class="col-md-4 col-xs-6" style="margin-top: 20px">
+          <div class="portfolio-item">
+            <img src="assets/img/cert2.jpg" class="img-res" alt="" />
+            <div class="portfolio-item-info">
+              <h4>Security Fundamentals</h4>
+            </div>
+            <!-- /.portfolio-item-info -->
+          </div>
+          <!-- /.portfolio-item -->
+        </div>
+        <div class="col-md-4 col-xs-6" style="margin-top: 20px">
+          <div class="portfolio-item">
+            <img src="assets/img/cert3.jpg" class="img-res" alt="" />
+            <div class="portfolio-item-info">
+              <h4>USAID EMPLOYABILITY READINESS</h4>
+            </div>
+            <!-- /.portfolio-item-info -->
+          </div>
+          <!-- /.portfolio-item -->
+        </div>
+        <div class="col-md-4 col-xs-6" style="margin-top: 20px">
+          <div class="portfolio-item">
+            <img src="assets/img/cert4.jpg" class="img-res" alt="" />
+            <div class="portfolio-item-info">
+              <h4>Let's Talk Start up</h4>
+            </div>
+            <!-- /.portfolio-item-info -->
+          </div>
+          <!-- /.portfolio-item -->
+        </div>
+        <div class="col-md-4 col-xs-6" style="margin-top: 20px">
+          <div class="portfolio-item">
+            <img src="assets/img/cert5.jpg" class="img-res" alt="" />
+            <div class="portfolio-item-info">
+              <h4>CoPro Coding Contest</h4>
+            </div>
+            <!-- /.portfolio-item-info -->
+          </div>
+          <!-- /.portfolio-item -->
+        </div>
+        <div class="col-md-4 col-xs-6" style="margin-top: 20px">
+          <div class="portfolio-item">
+            <img src="assets/img/accenture.png" class="img-res" alt="" />
+            <div class="portfolio-item-info">
+              <h4>ACCENTURE efe</h4>
+            </div>
+            <!-- /.portfolio-item-info -->
+          </div>
+          <!-- /.portfolio-item -->
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section
     id="service"
     class="site-section section-services overlay text-center"
@@ -286,22 +383,21 @@
         <h3>My recent Works</h3>
         <img src="assets/img/lines.svg" class="img-lines" alt="lines" />
       </div>
-      <div  class="row d-flex justify-content-center">
+      <div class="row d-flex justify-content-center">
         <div class="col-md-4 col-xs-6"></div>
         <div class="col-md-4 col-xs-6">
-            <div class="portfolio-item">
-              <img src="assets/img/shoofst.png" class="img-res" alt="" />
-              <div class="portfolio-item-info">
-                <h4>Project Title</h4>
-                <a href="#" data-toggle="modal" data-target="#portfolioItem5"
-                  ><span class="glyphicon glyphicon-eye-open"></span
-                ></a>
-                <a href="#"><span class="glyphicon glyphicon-link"></span></a>
-              </div>
-              <!-- /.portfolio-item-info -->
+          <div class="portfolio-item">
+            <img src="assets/img/shoofst.png" class="img-res" alt="" />
+            <div class="portfolio-item-info">
+              <h4>Project Laravel</h4>
+              <!-- <a href="#" data-toggle="modal" data-target="#portfolioItem5"
+                ><span class="glyphicon glyphicon-eye-open"></span
+              ></a> -->
             </div>
-            <!-- /.portfolio-item -->
+            <!-- /.portfolio-item-info -->
           </div>
+          <!-- /.portfolio-item -->
+        </div>
       </div>
       <div class="row">
         <div class="col-md-4 col-xs-6">
@@ -309,9 +405,9 @@
             <img src="assets/img/ionic.png" class="img-res" alt="" />
             <div class="portfolio-item-info">
               <h4>Project Ionic</h4>
-              <a href="#" data-toggle="modal" data-target="#portfolioItem3"
+              <!-- <a href="#" data-toggle="modal" data-target="#portfolioItem3"
                 ><span class="glyphicon glyphicon-eye-open"></span
-              ></a>
+              ></a> -->
             </div>
             <!-- /.portfolio-item-info -->
           </div>
@@ -322,9 +418,9 @@
             <img src="assets/img/angular1.jpg" class="img-res" alt="" />
             <div class="portfolio-item-info">
               <h4>Projet Angular</h4>
-              <a href="#" data-toggle="modal" data-target="#portfolioItem1"
+              <!-- <a href="#" data-toggle="modal" data-target="#portfolioItem1"
                 ><span class="glyphicon glyphicon-eye-open"></span
-              ></a>
+              ></a> -->
             </div>
             <!-- /.portfolio-item-info -->
           </div>
@@ -335,9 +431,9 @@
             <img src="assets/img/shoofstagek.png" class="img-res" alt="" />
             <div class="portfolio-item-info">
               <h4>Project Android</h4>
-              <a href="#" data-toggle="modal" data-target="#portfolioItem2"
+              <!-- <a href="#" data-toggle="modal" data-target="#portfolioItem2"
                 ><span class="glyphicon glyphicon-eye-open"></span
-              ></a>
+              ></a> -->
             </div>
             <!-- /.portfolio-item-info -->
           </div>
@@ -348,31 +444,81 @@
           <div class="portfolio-item">
             <img src="assets/img/Symfony.png" class="img-res" alt="" />
             <div class="portfolio-item-info">
-              <h4>Project Title</h4>
-              <a href="#" data-toggle="modal" data-target="#portfolioItem4"
+              <h4>Project Symfony</h4>
+              <!-- <a href="#" data-toggle="modal" data-target="#portfolioItem4"
                 ><span class="glyphicon glyphicon-eye-open"></span
-              ></a>
-              <a href="#"><span class="glyphicon glyphicon-link"></span></a>
+              ></a> -->
             </div>
             <!-- /.portfolio-item-info -->
           </div>
           <!-- /.portfolio-item -->
         </div>
-       
       </div>
     </div>
   </section>
   <!-- /.secton-portfolio -->
 
+  <section id="challange" class="site-section section-portfolio">
+    <div class="container">
+      <div class="text-center">
+        <h3>Challanges</h3>
+        <img src="assets/img/lines.svg" class="img-lines" alt="lines" />
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-xs-6">
+          <div class="portfolio-item">
+            <img src="assets/img/carboncode.png" class="img-res" alt="" />
+            <div class="portfolio-item-info">
+              <h4>Nuit de L'info 2020</h4>
+            </div>
+            <!-- /.portfolio-item-info -->
+          </div>
+          <!-- /.portfolio-item -->
+        </div>
+
+        <div class="col-md-4 col-xs-6">
+          <div class="portfolio-item">
+            <img src="assets/img/MAQUETTE.png" class="img-res" alt="" />
+            <div class="portfolio-item-info">
+              <h4>GREEN NIGHT 2020</h4>
+            </div>
+            <!-- /.portfolio-item-info -->
+          </div>
+          <!-- /.portfolio-item -->
+        </div>
+        <div class="col-md-4 col-xs-6">
+          <div class="portfolio-item">
+            <img src="assets/img/nuitDinfo2019.jpg" class="img-res" alt="" />
+            <div class="portfolio-item-info">
+              <h4>Nuit de L'info 2019</h4>
+            </div>
+            <!-- /.portfolio-item-info -->
+          </div>
+          <!-- /.portfolio-item -->
+        </div>
+        <div class="col-md-4 col-xs-6" style="margin-top: 20px">
+          <div class="portfolio-item">
+            <img src="assets/img/nuitvectoriya.png" class="img-res" alt="" />
+            <div class="portfolio-item-info">
+              <h4>Nuit de L'info 2020</h4>
+            </div>
+            <!-- /.portfolio-item-info -->
+          </div>
+          <!-- /.portfolio-item -->
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="site-section section-counters text-center">
     <div class="container">
       <div class="row">
         <div class="col-sm-4 col-xs-12">
-          <p class="counter start" data-to="10" data-speed="2000">0</p>
+          <p class="counter start" data-to="2" data-speed="2000">0</p>
           <h4>Years Experience</h4>
         </div>
         <div class="col-sm-4 col-xs-12">
-          <p class="counter start" data-to="120" data-speed="2000">0</p>
+          <p class="counter start" data-to="18" data-speed="2000">0</p>
           <h4>Projects Delivered</h4>
         </div>
         <div class="col-sm-4 col-xs-12">
@@ -396,12 +542,12 @@
     <div class="container">
       <h3>Contact</h3>
       <img src="assets/img/lines.svg" class="img-lines" alt="lines" />
-      <form>
+      <form [formGroup]="contactForm" >
         <div class="row">
           <div class="col-sm-6">
             <input
               type="text"
-              name="name"
+              formControlName="name" 
               class="form-control mt-x-0"
               placeholder="Name"
               required
@@ -410,7 +556,7 @@
           <div class="col-sm-6">
             <input
               type="email"
-              name="email"
+              formControlName="email" 
               class="form-control"
               placeholder="Email"
               required
@@ -418,7 +564,7 @@
           </div>
           <div class="col-sm-12">
             <textarea
-              name="message"
+            formControlName="message" 
               id="mesaage"
               class="form-control"
               placeholder="Message"
@@ -497,7 +643,7 @@
         <img class="img-res" src="assets/img/shoofstagek.png" alt="" />
       </div>
       <div class="modal-body">
-        <h4 class="modal-title">Project title</h4>
+        <h4 class="modal-title">Project Symfony</h4>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo
           finibus tristique. Maecenas dignissim condimentum sem eu tincidunt.
@@ -613,7 +759,7 @@
         <img class="img-res" src="assets/img/portfolio-6.jpg" alt="" />
       </div>
       <div class="modal-body">
-        <h4 class="modal-title">Project title</h4>
+        <h4 class="modal-title">Project Symfony</h4>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo
           finibus tristique. Maecenas dignissim condimentum sem eu tincidunt.
