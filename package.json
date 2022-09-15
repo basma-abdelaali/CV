@@ -1,6 +1,9 @@
 {
   "name": "basma-portfolio",
-  "version": "0.0.0",
+  "version": "0.1.0",
+  "engines": {
+    "node": "16.13.0"
+  },
   "scripts": {
     "ng": "ng",
     "start": "node server.js",
